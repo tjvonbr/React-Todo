@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  background-color: #2d2d37;
+  background-image: linear-gradient(blue, dodgerblue);
 }
 
 h1,
@@ -32,20 +32,54 @@ span {
   margin: 0 auto;
 }
 
+.main-wrapper {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+.project-title {
+  text-align: center;
+}
+
 .item-completed {
-  width: 200px;
-  margin-top: 25px;
   padding: 0px 5px;
-  border: 2px solid white;
   text-align: center;
   text-decoration: line-through;
 }
 
 .item-incomplete {
-  width: 200px;
-  margin-top: 25px;
   padding: 0px 5px;
-  border: 2px solid white;
   text-align: center;
   text-decoration: none;
+}
+
+.toDo-form {
+  text-align: center;
+}
+
+.button-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 15%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.listItem-wrapper {
+  border: 1px solid white;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.listItem-wrapper p:hover {
+  cursor: pointer;
 }

@@ -52,8 +52,8 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>
-        <h1>TODO List:  MVP</h1>
+      <div className='main-wrapper'>
+        <h1 className="project-title">TODO List:  MVP</h1>
         <ToDoForm addItem={this.addItem}
                   clearCompleted={this.clearCompleted}
          />

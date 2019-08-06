@@ -4,9 +4,9 @@ const ToDoItem = props => {
   return (
     <div
       className={`item${props.item.completed ? '-completed' : '-incomplete'}`}
-      onClick={() => props.toggleItem(props.item.id)}
+    
     >
-      <p>{props.item.name}</p>
+      <p onClick={() => props.toggleItem(props.item.id)}>{props.item.name}</p>
     </div>
   )
 }
